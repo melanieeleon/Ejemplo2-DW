@@ -12,7 +12,6 @@ header {
     width: 200px; /* Ancho del menú */
     height: 100vh; /* Altura del menú (100% del viewport) */
     background-color: rgb(235, 201, 235); /* Color de fondo del menú */
-    
     padding: 20px; /* Padding interno del menú */
 	flex:1;
     transition: all 0.3s ease; /* Animación de transición para suavizar los cambios */
@@ -24,6 +23,7 @@ header {
     align-items: center;
     margin: 20px;
 }
+
 #img-container img{
     max-width: 400px;
     height: auto;
@@ -48,16 +48,16 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #000;
-	display: block; /* Ocupa todo el ancho disponible */
-    padding: 10px; /* Padding para cada enlace */
-    text-decoration: none; /* Elimina la decoración por defecto */
-    color: #fff; /* Color del texto de los enlaces */
-    transition: color 0.3s ease; /* Animación de transición para el color */
+	display: block; 
+    padding: 10px;
+    text-decoration: none; 
+    color: #fff; 
+    transition: color 0.3s ease; 
 
     
 }
 nav ul li a:hover {
-    color: rgb(10, 9, 9);
+    color: #333;
 }
 
 main {
@@ -137,9 +137,7 @@ button:hover {
 	display:flex;
 }
 
-
-
-
+/*ABOUT ME*/
 #aboutme h2{
     text-align: center;
 }
@@ -162,6 +160,7 @@ button:hover {
     width: 100%; 
     margin: 0 auto;
 }
+
 /*FOOTER*/
 .footer {
     font-family:"Inconsolata", monospace ;
