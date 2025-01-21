@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de HTML5</title>
+    <link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+	<h1>Snoopy's restaurant</h1>
+	<div class="contenedor">
+		<header>
+			
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#menu">Menu</a></li>
+					<li><a href="#reservations">Reservations</a></li>
+					<li><a href="#aboutme">About me</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+
+		<main>
+			<section id="home">
+				<h2>Welcome Dear Friends!!</h2> <br>
+				<p>It's a friendly website where you can see about our restaurant and our 
+					interesting menu and prices.
+				</p>
+			</section> <br>
+			<div id="img-container">
+				<img src="../imagenes/coffeeph.jpg" alt="coffee">
+			</div>
+
+			<section id="menu">
+				<h2>Menu</h2>
+				<p>Explore our menu and prices!</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Food</th>
+							<th>Prices</th>
+							<th>Stars</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Americano</td>
+							<td>$2.00</td>
+							<td>5 stars</td>
+							
+						</tr>
+						<tr>
+							<td>Capuccino</td>
+							<td>$3.50</td>
+							<td>5 stars</td>
+							
+						</tr>
+						<tr>
+							<td>Croissant</td>
+							<td>$4.00</td>
+							<td>5 stars</td>
+						</tr>
+					</tbody>
+				</table>
+			</section> <br>
+			<div id="img-container">
+				<img src="../imagenes/coffee2.jpg" alt="coffee2">
+			</div>
+
+
+
+			<section id="reservations">
+				<h2>Reservations</h2>
+				<p>Do your reservations here!!</p>
+				<form action="procesar.php" method="post">
+					<label for="nombre">Name:</label>
+					<input type="text" id="nombre" name="nombre" required>
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="mensaje">Day/Hour of the reservation:</label>
+					<textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea>
+
+					<button type="submit">Send</button>
+				</form>
+			</section>
+
+			<section id="aboutme">
+				<h2>About me</h2> 
+				<p>Discover more about me!</p> <br>
+				<div class="aboutme-content">
+					<div class="aboutme-text">
+						<ul>
+							<li>My full name is Melanie Antonella Leon Clavijo.</li>
+							<li>Everybody calls me by Mel</li>
+							<li>I am 21 years old.</li>
+							<li>I like to hear music everyday</li>
+							<li>My favorite character is Snoopy, as you can see hahaha.</li>                        
+						</ul>
+					</div>
+					<div class="aboutme-img">
+						<img src="../imagenes/snoopyaboutme.png" alt="yo">
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+    <footer class="footer">
+        <p>&copy; 2025 SnoopyWebsite. All rights reserved.</p>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </footer>
+</body>
+</html>
